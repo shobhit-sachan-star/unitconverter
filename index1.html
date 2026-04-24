@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ConvertHub</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>ConvertHub</h2>
+
+    <input type="number" id="inputValue" placeholder="Enter value">
+
+    <select id="type" onchange="updateUnits()">
+        <option value="length">Length</option>
+        <option value="weight">Weight</option>
+        <option value="temperature">Temperature</option>
+    </select>
+
+    <select id="fromUnit"></select>
+    <select id="toUnit"></select>
+
+    <button onclick="convert()">Convert</button>
+
+    <h3 id="result">Result: </h3>
+</div>
+
+<script src="script1.js"></script>
+</body>
+</html>
